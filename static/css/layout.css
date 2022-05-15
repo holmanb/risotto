@@ -17,9 +17,9 @@
     .page {
         grid-template-areas:
           "header  header"
-          "body    aside"
+          "aside   body"
           "footer  footer";
-        grid-template-columns: minmax(0, 1fr) 15rem;
+        grid-template-columns: 15rem minmax(0, 1fr);
         grid-column-gap: 2rem;
     }
 }

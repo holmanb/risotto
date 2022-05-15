@@ -7,6 +7,12 @@
 
     <body>
         <div class="page">
+	<aside>
+		<h2>Links</h2>
+		<ul><li><a href="https://github/holmanb/" target="_blank">Github</a></li>
+		<li><a href="https://www.linkedin.com/in/brett-holman/"
+					target="_blank">Linkedin</a></li></ul>
+	</aside>
 
             <header class="page__header">
                 {{- partial "header.html" . -}}
@@ -14,16 +20,6 @@
 
             <section class="page__body">
                 {{- block "main" . }}{{- end }}
-            </section>
-
-            <section class="page__aside">
-                <div class="aside__about">
-                    {{- partial "about.html" . -}}
-                </div>
-                <hr>
-                <div class="aside__content">
-                    {{- block "aside" . }}{{- end }}
-                </div>
             </section>
 
             <footer class="page__footer">
